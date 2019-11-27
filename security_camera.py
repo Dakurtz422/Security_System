@@ -98,7 +98,7 @@ def camera_capture():
         cnt = cv2.countNonZero(diff)
         if cnt > th:
             #sleep(0.2)
-            print("[WARM] カメラに動きを検出")
+            print("[WARM] Moving found!")
             cv2.imshow("I'm watching You", img3)
             cv2.imwrite(save_path + str(num) + ".jpg", img3)
 
